@@ -1,8 +1,10 @@
-# Wando Team 2oe Apache Checklist
+# Underwood's Apache Checklist
 
 ## Notes
 
-Assume root permissions are needed for most commands. You can use `sudo` or become root with `su`.
+Assume root permissions are needed for most commands.
+
+If Apache is required on the image, please follow this checklist. Otherwise, disable Apache.
 
 ## Apache Basics
 
