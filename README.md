@@ -1,6 +1,8 @@
-# 5GuysAndAComputer Linux Checklist
+# Underwood's Linux Checklist
 
 ## Notes
+
+This checklist has pulled off of other checklists found all over the internet in order to make the checklist better and more useful.
 
 Assume root permissions are needed for most commands.
 
@@ -14,7 +16,7 @@ I would no longer recommend running `apt-get dist-upgrade` in competition. They 
 
 1. Do the Forensics Questions
 
-	Forensics questions can point you towards other vulnerabilities. Keep this in mind. (ex: a media file, find a hidden message, find a backdoor, etc)
+	Forensics Questions can point you towards other vulnerabilities. (ex: a media file, find a hidden message, find a backdoor, etc)
 
 1. Account Configuration
 
@@ -469,7 +471,7 @@ I would no longer recommend running `apt-get dist-upgrade` in competition. They 
 
 	1. Configure with `/etc/audit/auditd.conf`
 
-## Other Checklists
+## Other Checklists That Might Be Useful
 
 [SANS Hardening the Linux System](https://www.sans.org/media/score/checklists/LinuxCheatsheet_2.pdf)
 
