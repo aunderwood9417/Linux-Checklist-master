@@ -1,0 +1,47 @@
+<h1 id="wando-team-2oe-apache-checklist">Wando Team 2oe Apache Checklist</h1>
+<h2 id="notes">Notes</h2>
+<p>Assume root permissions are needed for most commands. You can use <code>sudo</code> or become root with <code>su</code>.</p>
+<h2 id="apache-basics">Apache Basics</h2>
+<p><code>/etc/apache/apache2.conf</code> is the main configuration file on Debian and Ubuntu</p>
+<p>Default root directory:</p>
+<pre><code>/var/www/html or /var/www
+</code></pre>
+<p>Test config file syntax</p>
+<pre><code>$ http -t
+</code></pre>
+<p>Access logs</p>
+<pre><code>/var/log/httpd/access_log` and `/var/log/httpd/ssl_access_log
+</code></pre>
+<p>Error logs</p>
+<pre><code>/var/log/httpd/error_log
+</code></pre>
+<h2 id="checklist">Checklist</h2>
+<ol>
+<li><p>Update <code>apache2</code> to the latest version</p>
+<p><code>$ apt-get install apache2</code></p></li>
+<li><p>Run Apache as a separate user and group</p>
+<ol>
+<li><p>Create Apache user and group</p>
+<p><code>$ groupadd apache-web</code></p>
+<p><code>$ useradd -d /var/www/ -g apache-web -s /bin/nologin apache-web</code></p></li>
+<li><p>Set "User" and "Group" in <code>/etc/apache/apache2.conf</code> to <code>apache-web</code></p>
+<pre><code>User apache-web
+Group apache-web
+</code></pre></li>
+</ol></li>
+<li><p>Start the Apache service</p>
+<ol>
+<li><p>If using systemd</p>
+<p><code>$ service apache2 start</code></p></li>
+<li><p>If using Upstart</p>
+<p><code>$ /etc/init.d/apache2 start</code></p></li>
+</ol></li>
+<li><p>Audit the existing Apache installation</p>
+<ol>
+<li><p>See what the website currently looks like</p>
+<p><code>$ wget 127.0.0.1</code></p></li>
+<li><p>Look through and backup the <code>/var/www</code> directory</p>
+<p><code>$ ls -l /var/www</code></p>
+<p><code>$ rsync -avzh /var/www &lt;destination&gt;</code></p></li>
+</ol></li>
+</ol>
