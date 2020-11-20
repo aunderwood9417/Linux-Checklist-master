@@ -141,6 +141,9 @@ I would no longer recommend running `apt-get dist-upgrade` in competition. They 
 		```
 		$ ufw default deny incoming
 		$ ufw default allow outgoing
+		$ ufw allow ssh (if needed)
+		$ ufw allow http
+		$ ufw allow https
 		$ ufw allow $port/service
 		$ ufw delete $rule
 		$ ufw logging on
