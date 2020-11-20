@@ -37,6 +37,12 @@ I would no longer recommend running `apt-get dist-upgrade` in competition. They 
 
 		Look out for uid 0 and hidden users!
 
+	1. List and look for unauthorized users
+	
+		```
+		$ cut -d: -f1 /etc/passwd
+		```
+
 	1. Delete unauthorized users
 
 		```
