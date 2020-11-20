@@ -1,4 +1,4 @@
-# Underwood's Linux Checklist
+# Big Chungus' Linux Checklist
 
 ## Notes
 
