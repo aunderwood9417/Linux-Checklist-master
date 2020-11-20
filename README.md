@@ -482,8 +482,10 @@ I would no longer recommend running `apt-get dist-upgrade` in competition. They 
 1. File locater
 
 	1. Install
+		
 		`$ sudo apt install mlocate`
 	1. Use
+		
 		`# locate $file`
 
 ## Other Checklists That Might Be Useful
