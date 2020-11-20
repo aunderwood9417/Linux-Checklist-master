@@ -479,6 +479,10 @@ I would no longer recommend running `apt-get dist-upgrade` in competition. They 
 		`$ auditctl -e 1`
 
 	1. Configure with `/etc/audit/auditd.conf`
+1. File locater
+
+	1. Install
+		' $ sudo apt install mlocate ' 
 
 ## Other Checklists That Might Be Useful
 
