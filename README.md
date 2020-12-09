@@ -1,4 +1,4 @@
-# Big Chungus' Linux Checklist
+# Team 13-1981's Linux Checklist
 
 ## Notes
 
