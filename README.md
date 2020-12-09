@@ -2,6 +2,8 @@
 
 ## Notes
 
+Made by Aidan Underwood and Owen Flatman.
+
 This checklist has pulled off of other checklists found all over the internet in order to make the checklist better and more useful.
 
 Assume root permissions are needed for most commands.
