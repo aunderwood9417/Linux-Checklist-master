@@ -45,6 +45,12 @@ I would no longer recommend running `apt-get dist-upgrade` in competition. They 
 		$ cut -d: -f1 /etc/passwd
 		```
 
+	1. List Users in Groups
+	
+		```
+		$ grep 'group-name-here' /etc/group
+		```
+		
 	1. Delete unauthorized users
 
 		```
